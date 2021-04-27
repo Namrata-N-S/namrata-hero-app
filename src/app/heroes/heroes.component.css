@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+}
+.hero-item {
+  border-radius: 10px;
+}
+.hero-id,
+.hero-name {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-id {
+  background-color: rgb(109, 109, 155);
+  width: 20px;
+}
+
+.hero-name {
+  background-color: rgb(116, 187, 235);
+  width: 100px;
+}
