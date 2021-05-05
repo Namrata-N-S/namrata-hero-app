@@ -6,8 +6,12 @@ import { MessagesService } from "../messages.service";
   styleUrls: ["./messages.component.css"]
 })
 export class MessagesComponent implements OnInit {
-  constructor(private messagesSerivce: MessagesService) {}
+  constructor(public messagesSerivce: MessagesService) {}
 
-  messages: string[] = this.messagesSerivce.messages;
+  mymessage = this.messagesSerivce.messages;
+  clear() {
+    this.messagesSerivce.clear();
+  }
+
   ngOnInit() {}
 }
